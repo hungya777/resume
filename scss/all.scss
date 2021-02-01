@@ -232,17 +232,18 @@ body {
     }
     .footer{       
         padding: 0;  /*clear padding*/
+        width: 100%;
         .title1{
-            width: 100%;
+            // width: 100%;
             flex-wrap: wrap;
             text-align: center;
         }
         ul{
-            width: 100%;
+            // width: 100%;
             flex-wrap: wrap;
             li{
                 margin: 0;  /*clear margin*/
-                width: 50%;
+                // width: 100%;
                 text-align: center;
             }
             a{
