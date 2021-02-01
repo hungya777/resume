@@ -59,13 +59,6 @@ body {
     padding: 40px 40px 40px 40px;
 }
 
-.wrap-footer{
-    width: 1110px;
-    margin: 0 auto;
-    background-color: #415165;
-    padding: 40px 40px 40px 40px;
-}
-
 .profile{
     display: flex;
     justify-content: space-between;
@@ -175,7 +168,7 @@ body {
 }
 
 .footer{
-    // background-color: #415165;
+    background-color: #415165;
     text-align: center;
     padding-bottom: 32px;
 }
@@ -243,7 +236,6 @@ body {
     }
     .footer{       
         padding: 0;  /*clear padding*/
-        width: 100%;
         .title1{
             width: 100%;
             flex-wrap: wrap;
