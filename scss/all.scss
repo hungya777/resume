@@ -214,6 +214,10 @@ body {
         flex-direction: column-reverse;
     }
     .content{
+        .title{
+            width: 50%;
+            flex-wrap: wrap;
+        }
         padding: 0;  /*clear padding*/      
         ul{
             width: 100%;

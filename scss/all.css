@@ -227,6 +227,11 @@ body {
     padding: 0;
     /*clear padding*/
   }
+  .content .title {
+    width: 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .content ul {
     width: 100%;
     -ms-flex-wrap: wrap;
