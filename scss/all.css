@@ -247,17 +247,20 @@ body {
     width: 100%;
   }
   .footer .title1 {
+    width: 50%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
   }
   .footer ul {
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .footer ul li {
     margin: 0;
     /*clear margin*/
+    width: 50%;
     text-align: center;
   }
   .footer ul a {
