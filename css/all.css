@@ -43,7 +43,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -52,25 +52,29 @@ table {
   border-spacing: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Microsoft JhengHei', 'Lato', sans-serif;
+  font-family: "Microsoft JhengHei", "Lato", sans-serif;
   line-height: 1.5;
 }
 
-.wrap {
-  width: 1110px;
+img {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1110px;
   margin: 0 auto;
   /* padding: 40px 360px 0px 360px; */
   padding: 40px 40px 40px 40px;
 }
 
 .profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .profile-info li, .education li, .skills li, .Research-Interest li, .International-Journal li {
@@ -85,7 +89,6 @@ body {
   padding-bottom: 8px;
   margin-bottom: 16px;
 }
-
 .title-eng {
   font-size: 24px;
   color: #A00404;
@@ -100,7 +103,6 @@ body {
   padding-bottom: 8px;
   margin-bottom: 16px;
 }
-
 .title1-eng {
   font-size: 24px;
   color: white;
@@ -114,8 +116,9 @@ body {
 }
 
 .personalPhoto {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .profile, .education, .skills, .experience, .Research-Interest, .International-Journal, .Domestic-Journal, .Conference-Papers, .Award {
@@ -136,22 +139,22 @@ body {
 }
 
 /* .skills{
-    background-color: #415165;
-    padding: 32px 102px 32px 102px;
-    text-align: center;
-    color: white;
+  background-color: #415165;
+  padding: 32px 102px 32px 102px;
+  text-align: center;
+  color: white;
 } */
 /* .skills ul{
-    border-left: 1px solid white;
-    margin-top: 40px;
-    margin-left: 366px;
-    padding-left: 16px;
+  border-left: 1px solid white;
+  margin-top: 40px;
+  margin-left: 366px;
+  padding-left: 16px;
 }
 
 .skills li{
-    text-align: left;
-    font-size: 24px;
-    margin-bottom: 20px;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
 } */
 .experience h3 {
   font-size: 24px;
@@ -173,28 +176,33 @@ body {
   margin-bottom: 32px;
 }
 
+.award-photo {
+  max-width: 50%;
+}
+@media (max-width: 767px) {
+  .award-photo {
+    max-width: 100%;
+  }
+}
+
 .footer {
   background-color: #415165;
   text-align: center;
   padding-bottom: 32px;
 }
-
 .footer ul {
   margin-top: 32px;
   color: white;
 }
-
-.footer li {
+.footer ul li {
   font-size: 24px;
   margin-bottom: 16px;
 }
-
-.footer li a {
+.footer ul li a {
   text-decoration: none;
   color: white;
 }
-
-.footer li a:hover {
+.footer ul li a:hover {
   color: blue;
 }
 
@@ -205,41 +213,31 @@ body {
 .text-blod {
   font-weight: bold;
 }
-
 .text-blue {
   color: blue;
 }
 
 @media (max-width: 992px) {
-  .wrap {
+  .container {
     padding: 30px 40px 30px 40px;
   }
 }
-
 @media (max-width: 767px) {
   .profile {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .content {
-    padding: 0;
-    /*clear padding*/
+    padding: 0; /*clear padding*/
   }
   .content .title {
-    width: 50%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .content ul {
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .content ul li {
     margin: 0;
-    width: 50%;
     border: 1px solid #fff;
     margin-bottom: 10px;
   }
@@ -247,29 +245,23 @@ body {
     padding: 8px 0px 8px 0px;
   }
   .footer {
-    padding: 0;
-    /*clear padding*/
-    width: 100%;
+    padding: 0; /*clear padding*/
   }
   .footer .title1 {
-    width: 50%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: wrap;
     text-align: center;
   }
   .footer ul {
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .footer ul li {
-    margin: 0;
-    /*clear margin*/
-    width: 50%;
+    margin: 0; /*clear margin*/
+    width: 100%;
     text-align: center;
   }
   .footer ul a {
     padding: 8px 0px 8px 0px;
   }
-}
-/*# sourceMappingURL=all.css.map */
+}/*# sourceMappingURL=all.css.map */
